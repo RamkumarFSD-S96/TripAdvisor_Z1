@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", serif;
+}
+
+/* NAVBAR */
+
+.NavBar {
+
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: solid 1px lightgray;
+    z-index: 1;
+    background-color: white;
+    height: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+
+}
+
+.NavBar__Section1
+{
+    display: flex;
+}
+
+.NavBar__Section1 img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.NavBar__Menu {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bolder;
+}
+.NavBar__Menu p:hover
+{
+    cursor: pointer;
+    background-color:bisque;
+    border-radius: 10px;
+    padding: 1px;
+
+}
+.NavBar__Section3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Icon1 {
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.NavBar__Section3 img {
+    width: 40px;
+    height: 40px;
+}
+
+.Sign-in {
+    padding: 5px;
+    border-radius: 75px;
+    background-color: black;
+    color: white;
+}
+
+/* WHere TO ? */
+
+.Wheretogo
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+.Options
+{
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+.Options p
+{
+    padding: 10px;
+}
+.Options img
+{
+    height: 30px;
+    width: 30px;
+}
+.Options p:hover
+{
+    text-decoration: underline;
+    font-weight: lighter;
+    padding: 2px;
+
+}
+
+/* <!-- SearchBar --> */
+
+.SearchBar
+{
+    border: solid black 2px;
+    width: 50%;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    margin-left: 380px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.SearchBar
+{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.SearchBar p
+{
+    padding: 10px;
+}
+.P1 img
+ {
+    height: 30px;
+    width: 30px;
+    gap: 10px;
+}
+.P1 input
+{
+    border: none;
+    margin-left: 10px;
+    width: 220px;
+}
+.P2
+{
+    background-color:#34e0a1;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 390px;
+}
+
+/* <!-- TrendImage --> */
+
+.TrendImage img
+{
+    margin: 20px;
+    height:600px;
+    width: 900px;
+    border-radius: 30px;
+    margin-left: 280px;
+}
+
+/* TrendCast */
+
+.TrendCast
+{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.TrendCast h2,h3
+{
+    padding: 5px;
+}
+.TrendCast h3
+{
+    font-weight: lighter;
+}
+
+.TrendcastImages
+{
+    padding: 5px;  
+}
+.TrendcastImages img
+{
+    border-radius: 40px;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    animation: scaling;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaling
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    100%
+    {
+        transform:scale(1);
+        opacity: 1;
+    }
+
+}
+
+.TrendcastImages:hover
+{
+    cursor: pointer;   
+}
+
+.TrendcastNameofPic
+{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.TrendcastNameofPic h3:hover
+{
+    text-decoration: underline;
+}
+
+/* Trendcreators */
+
+.Trendcreators
+{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.Trendcreators h2,h3
+{
+    padding: 5px;
+}
+.Trendcreators h3
+{
+    font-weight: lighter;
+}
+
+.TrendcreatorImages img
+{
+    height:300px;
+    width: 400px;
+    border-radius: 40px;
+    padding: 5px;
+    margin-left: 5px;
+    animation: scaling1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes scaling1
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    100%
+    {
+        transform:scale(1);
+        opacity: 1;
+    }
+
+}
+.TrendcreatorImages:hover
+{
+    cursor: pointer;
+
+}
+.TrendcreatorsName 
+{
+    display: flex;
+    justify-content: space-around;
+}
+.TrendcreatorsNameD
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+.TrendcreatorsName h3:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.TrendcreatorsNameD h2:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Likes,.LikesD
+{
+    display: flex;
+    justify-content:space-around;
+}
+
+/* Bangalore */
+
+.Bangalore
+{
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.BangaloreH
+{
+    margin-left: 120px;
+}
+.BangaloreH h3
+{
+    font-weight: lighter;
+}
+.Bangaloreimage
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Bangaloreimage img
+{
+    border-radius: 40px;
+    padding: 10px;
+    animation: Rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes Rotate
+{
+    0%
+    {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: rotateY(180deg);
+    }
+}
+
+.DetailsImage
+{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 100px;
+    justify-content: space-around;
+}
+.DetailsA,.DetailsB.DetailsC,.DetailsD
+{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+.DetailsA p,.DetailsB p,.DetailsC p,.DetailsD p
+{
+    padding: 2px;
+}
+/* More to explore */
+
+.Moretoexplore
+{
+    background-color: antiquewhite;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 20px;
+    padding: 5px;
+}
+.MoretoexploreH
+{
+    margin-left: 120px; 
+}
+
+.Moretoexploreimg
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Moretoexploreimg img
+{
+    border-radius: 40px;
+    padding: 10px;
+    justify-content: space-around;
+}
+.Moretoexploreimg img:hover
+{
+    transition: 2s;
+    transform: rotatey(180deg);
+
+}
+.Bangaloreinfo
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Bangaloreinfo p:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* NextTrip,HOLIDAY */
+.NextTrip,.Holiday
+{
+    margin-left:120px;
+    margin-right:120px;
+    padding: 10px; 
+}
+.NextTrip h3,.Holiday h3
+{
+    font-weight: lighter;
+}
+
+.NextTrip img,.Holiday img
+{
+    border-radius: 40px;
+    padding: 5px;
+}
+
+/* <!-- WANDERER --> */
+
+.Wanderer
+{
+    margin-top: 50px;
+    background-color:mediumpurple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Wanderer img
+{
+    padding: 60px;
+    padding-left:120px;
+}
+
+.Wanderer button
+{
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.Best
+{
+    margin: 50px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.Footer
+{
+    background-color:aqua;
+    display: flex;
+    padding: 20px;
+}
+
+.FooterPart1
+{
+    display: flex;
+    margin-left: 120px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+.FooterPart1_1 h4,.FooterPart1_2 h4,.FooterPart1_3 h4
+{
+    padding: 5px;
+
+}
+.FooterPart1_1 p,.FooterPart1_2 p,.FooterPart1_3 p
+{
+    padding: 5px;
+}
+.FooterPart1 h4:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.FooterPart1 p:hover
+{
+    background-color: aquamarine;
+    border-radius: 10px;
+
+}
+
+
+.FooterPart2
+{
+    background-color:aqua;
+    display: flex;
+    padding: 20px;
+}
+.FooterPart2_1
+{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content: space-around;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+}
+.FooterPart2_1 img
+{
+    height: 40px;
+    width: 40px;
+}
+.FooterPart2_1 p
+{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.FooterPart2_1 select
+{
+    border-radius: 10px;
+    font-weight:bolder;
+    width: 90px;
+    text-align: center;
+}
+.FootPart_2
+{
+    text-decoration: underline;
+}
